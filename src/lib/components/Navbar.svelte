@@ -7,7 +7,7 @@
         <div class="gap-10 flex justify-center items-center ">
             <h3>Blog</h3>
             <h3>Projects</h3>
-            <h3>Resume</h3>
+            <h3>Resumé</h3>
         </div>
         <div>
             <Clock />
