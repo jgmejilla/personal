@@ -2,6 +2,8 @@
     import Highlight from "$lib/components/Highlight.svelte";
     import SectionHeader from "$lib/components/SectionHeader.svelte";
     import Cats from "$lib/components/Cats.svelte";
+
+    import sleeping_cat from '$lib/assets/sleeping_cat.png'
 </script>
 
 <style>
@@ -25,22 +27,22 @@ grid grid-cols-1">
             
         </h1>
         <p class="mt-10">
-            I'm an undergraduate computer science student studying at the
+            I'm an undergraduate computer science student at the
             <Highlight text="University of the Philippines" />. 
             I Iike 
             <Highlight text="cats" /> (see below), 
             <Highlight text="playing instruments" />, and 
-            <Highlight text="moving" /> metal circles at the gym.
+            <Highlight text="lifting weights" /> at the gym.
                 
-            Welcome to my digital space; I hope to show you a few parts 
-            and pieces of myself. <span class="ml-[3px] flip">𐔌˙.</span>
+            Welcome to my digital space; I hope to show you some parts 
+            and pieces of myself that I'm proud of. <span class="ml-[3px] flip">𐔌˙.</span>
         </p>
     </div>
     <div>
     <div class="mt-2 mb-5 flex justify-center ">
         <Cats />    
     </div>
-    <p class="mt-1 md:mb-10 italic text-center text-sm md:text-lg text-lightgray">The best part about life is that sometimes there are cats.</p>
+    <p class="mt-1 md:mb-10 italic text-center text-sm md:text-lg text-lightgray">The best part about being alive is that sometimes there are cats.</p>
     </div>
     <SectionHeader title="Blog" subtitle="prose, poetry, and all kinds of words"/>
     <pre class="text-lightgray">Under construction...</pre>
@@ -48,8 +50,10 @@ grid grid-cols-1">
     <SectionHeader title="Projects" subtitle="some neat things i've scrapped together"/>
     <pre class="text-lightgray">Under construction...</pre>
 
-    
-    
+    <!-- https://www.vhv.rs/dpng/d/480-4802563_cat-sleeping-clipart-black-and-white-svg-freeuse.png -->
+    <div class="mt-24 mx-auto">
+        <img src={sleeping_cat} alt="sleeping cat" class="h-32"/>
+    </div>
 </div>
 
     

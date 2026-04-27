@@ -25,5 +25,6 @@
     }
 </style>
 
-<span class="font-mono"><span class="flip mr-3">{celestialBody}</span>{timeString}</span>
-
+<!-- <div class="border-2 py-1 px-2 rounded-lg"> -->
+    <span class="font-mono"><span class="flip mr-3">{celestialBody}</span>{timeString}</span>
+<!-- </div> -->

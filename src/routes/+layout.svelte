@@ -9,6 +9,6 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <Navbar />
-<div class="min-h-screen bg-cream text-darkgray py-25">
+<div class="min-h-screen bg-cream text-darkgray pt-25">
 {@render children()}
 </div>
