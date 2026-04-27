@@ -42,7 +42,7 @@ grid grid-cols-1">
     <div class="mt-2 mb-5 flex justify-center ">
         <Cats />    
     </div>
-    <p class="mt-1 md:mb-10 italic text-center text-sm md:text-lg text-lightgray">The best part about being alive is that sometimes there are cats.</p>
+    <p class="mt-1 md:mb-10 italic text-center text-sm md:text-lg text-lightgray">"The best part about being alive is that sometimes there are cats."</p>
     </div>
     <SectionHeader title="Blog" subtitle="prose, poetry, and all kinds of words"/>
     <pre class="text-lightgray">Under construction...</pre>
