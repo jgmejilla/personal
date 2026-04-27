@@ -1,3 +1,63 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+	font-family: "Carlito";
+	src: url("/fonts/Carlito/Carlito-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Carlito";
+	src: url("/fonts/Carlito/Carlito-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Carlito";
+	src: url("/fonts/Carlito/Carlito-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Carlito";
+	src: url("/fonts/Carlito/Carlito-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Radley";
+	src: url("/fonts/Radley/Radley-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Radley";
+	src: url("/fonts/Radley/Radley-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@theme {
+    --font-radley: "Radley";
+    --font-carlito: "Carlito";
+
+
+    --color-darkbrown: #9b4819;
+    --color-lightbrown: #a76a47;
+    --color-darkgray: #4F4F4F;
+    --color-lightgray: #8F8F8F;
+    --color-cream: #f4f1e8
+}
