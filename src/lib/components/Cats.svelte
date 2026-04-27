@@ -67,8 +67,7 @@ let frame = $derived(frames[frameNo])
 $effect(() => {
     const switchFrame = setInterval(() => {
         frameNo = (frameNo + 1) % frames.length
-    }, 1500)
-    console.log(frame)
+    }, 1200)
     
     return () => clearInterval(switchFrame)
 });
