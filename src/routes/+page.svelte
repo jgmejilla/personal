@@ -1,61 +1,72 @@
-<script>
-    import Highlight from "$lib/components/Highlight.svelte";
-    import SectionHeader from "$lib/components/SectionHeader.svelte";
-    import Cats from "$lib/components/Cats.svelte";
+<script lang="ts">
+	import Cats from '$lib/components/Cats.svelte';
+	import ComingSoon from '$lib/components/ComingSoon.svelte';
+	import Highlight from '$lib/components/Highlight.svelte';
+	import SectionHeader from '$lib/components/SectionHeader.svelte';
+	import BlogPreview from '$lib/components/BlogPreview.svelte';
 
-    import sleeping_cat from '$lib/assets/sleeping_cat.png'
+	import sleepingCat from '$lib/assets/sleeping_cat.png';
 </script>
 
 <style>
-    .flip {
-        transform: rotate(55deg) scale(-1, 1);
-        display: inline-block;
-    }
+	.flip {
+		transform: rotate(55deg) scale(-1, 1);
+		display: inline-block;
+	}
 </style>
 
-<div class="text-lg font-carlito md:px-10 md:w-1/2 w-3/4 gap-10 mx-auto 
-grid grid-cols-1">
-    <div class="space-y-6 leading-relaxed ">
-        <h1 class="text-5xl font-radley">
-            <span class="italic">
-                Hello
-            </span>, 
-            I am 
-            <span class="underline decoration-lightbrown">
-                Elijah
-            </span>
-            
-        </h1>
-        <p class="mt-10">
-            I'm an undergraduate computer science student at the
-            <Highlight text="University of the Philippines" />. 
-            I Iike 
-            <Highlight text="cats" /> (see below), 
-            <Highlight text="playing instruments" />, and 
-            <Highlight text="lifting weights" /> at the gym.
-                
-            Welcome to my digital space; I hope to show you some parts 
-            and pieces of myself that I'm proud of. <span class="ml-[3px] flip">𐔌˙.</span>
-        </p>
-    </div>
-    <div>
-    <div class="mt-2 mb-5 flex justify-center ">
-        <Cats />    
-    </div>
-    <p class="mt-1 md:mb-10 italic text-center text-sm md:text-lg text-lightgray">"The best part about being alive is that sometimes there are cats."</p>
-    </div>
-    <SectionHeader title="Blog" subtitle="prose, poetry, and all kinds of words"/>
-    <pre class="text-lightgray">Under construction...</pre>
-    
-    <SectionHeader title="Projects" subtitle="some neat things i've scrapped together"/>
-    <pre class="text-lightgray">Under construction...</pre>
+<div class="mx-auto grid w-full max-w-3xl grid-cols-1 gap-12 px-5 pb-16 font-carlito text-base leading-relaxed sm:px-8 sm:text-lg">
+	<section class="space-y-6">
+		<h1 class="font-radley text-5xl leading-tight text-foreground sm:text-6xl">
+			<span class="italic">Hello</span>, I am
+			<span class="underline decoration-accent decoration-2 underline-offset-4">Elijah</span>
+		</h1>
 
-    <!-- https://www.vhv.rs/dpng/d/480-4802563_cat-sleeping-clipart-black-and-white-svg-freeuse.png -->
-    <div class="mt-24 mx-auto">
-        <img src={sleeping_cat} alt="sleeping cat" class="h-32"/>
-    </div>
+		<p class="max-w-2xl">
+			I'm a software engineer based in the Philippines, and I recently graduated from the 
+			<Highlight text="University of the Philippines Diliman" />. I like
+			<Highlight text="cats" /> (see below), <Highlight text="playing instruments" />, and
+			<Highlight text="lifting weights" /> at the gym.
+		</p>
+
+		<p class="max-w-2xl">
+			Welcome to my digital space; I hope to show you some parts and pieces of myself that
+			I'm proud of. <span class="flip ml-1">𐔌˙.</span>
+		</p>
+	</section>
+
+	<figure class="space-y-4">
+		<div class="flex justify-center overflow-hidden rounded-lg border border-border bg-surface-strong px-3 py-5">
+			<Cats />
+		</div>
+		<figcaption class="text-center text-sm text-muted sm:text-base">
+			<span class="font-bold text-foreground">Figure 1.</span>
+			"The best part about being alive is that sometimes there are cats."
+		</figcaption>
+	</figure>
+
+	<div class="space-y-4">
+		<SectionHeader id="blog" title="Blog" subtitle="prose, poetry, and all kinds of words" />
+		
+		<BlogPreview />
+	</div>
+
+	<div class="space-y-4">
+		<SectionHeader
+			id="projects"
+			title="Projects"
+			subtitle="some neat things i've scrapped together"
+		/>
+		<ComingSoon />
+	</div>
+
+	<section id="resume" class="scroll-mt-28 space-y-4">
+		<SectionHeader title="Resumé" subtitle="experience, education, and tools" />
+		<ComingSoon label="Resume coming soon..." />
+	</section>
+
+	<!-- https://www.vhv.rs/dpng/d/480-4802563_cat-sleeping-clipart-black-and-white-svg-freeuse.png -->
+	<div class="mx-auto mt-10">
+		<img src={sleepingCat} alt="Sleeping cat illustration" class="h-28 opacity-90 sm:h-32" />
+	</div>
 </div>
-
-    
-<!-- insert ascii art here -->
-

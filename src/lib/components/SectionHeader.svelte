@@ -1,12 +1,12 @@
-<script>
-    let { title, subtitle } = $props();
+<script lang="ts">
+	let { title, subtitle, id }: { title: string; subtitle: string; id?: string } = $props();
 </script>
 
-<div>
-<h1 class="text-5xl font-radley">
-    <span class="italic">
-        {title}
-    </span>
-</h1>
-<p class="italic font-carlito text-lightgray text-md">{subtitle}</p>
-</div>
+<section {id} class="scroll-mt-28">
+	<h2 class="font-radley text-4xl sm:text-5xl">
+		<span class="italic">
+			{title}
+		</span>
+	</h2>
+	<p class="font-carlito text-base text-muted italic sm:text-lg">{subtitle}</p>
+</section>

@@ -1,5 +1,5 @@
-<script>
-    const frames = [
+<script lang="ts">
+	const frames = [
 `        ／>　　 \フ   
 　　 　 | 　_　 _|     
  　　　／\` ミ＿xノ
@@ -59,19 +59,18 @@
 ／￣|　　 |　|　|        |、ﾞ ~ヽ
 | (￣ヽ＿ヽ)__) __)      じし__, )ノ
 　＼二つ`,
-];
+	];
 
-let frameNo = $state(0); 
-let frame = $derived(frames[frameNo])
+	let frameNo = $state(0);
+	let frame = $derived(frames[frameNo]);
 
-$effect(() => {
-    const switchFrame = setInterval(() => {
-        frameNo = (frameNo + 1) % frames.length
-    }, 800)
-    
-    return () => clearInterval(switchFrame)
-});
+	$effect(() => {
+		const switchFrame = setInterval(() => {
+			frameNo = (frameNo + 1) % frames.length;
+		}, 800);
 
+		return () => clearInterval(switchFrame);
+	});
 </script>
 
-<pre class="w-auto text-md md:text-xl text-darkgray">{frame}</pre> 
+<pre class="max-w-full overflow-x-auto text-sm text-foreground sm:text-base md:text-xl">{frame}</pre>
