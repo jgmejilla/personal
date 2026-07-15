@@ -4,9 +4,13 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	let { children } = $props();
-</script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+</script>
+<svelte:head>
+	<title>elijah's corner</title>
+	<link rel="icon" href={favicon}>
+</svelte:head>
+
 
 <Navbar />
 <main class="min-h-screen bg-background pt-28 text-foreground transition-colors duration-200">

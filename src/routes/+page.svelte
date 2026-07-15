@@ -23,10 +23,9 @@
 		</h1>
 
 		<p class="max-w-2xl">
-			I'm a software engineer based in the Philippines, and I recently graduated from the 
-			<Highlight text="University of the Philippines Diliman" />. I like
-			<Highlight text="cats" /> (see below), <Highlight text="playing instruments" />, and
-			<Highlight text="lifting weights" /> at the gym.
+			I'm a junior software engineer who recently graduated from the 
+			<Highlight text="University of the Philippines" />. When I'm not writing code, I like to write 
+			prose and poetry, play different instruments, and lift weights at the gym.
 		</p>
 
 		<p class="max-w-2xl">
@@ -46,7 +45,7 @@
 	</figure>
 
 	<div class="space-y-4">
-		<SectionHeader id="blog" title="Blog" subtitle="prose, poetry, and all kinds of words" />
+		<SectionHeader id="blog" title="Blog" subtitle="prose, poetry, and all kinds of pondering" />
 		
 		<BlogPreview />
 	</div>
@@ -55,7 +54,7 @@
 		<SectionHeader
 			id="projects"
 			title="Projects"
-			subtitle="some neat things i've scrapped together"
+			subtitle="some things i've made while tinkering with code"
 		/>
 		<ComingSoon />
 	</div>
@@ -66,7 +65,7 @@
 	</section>
 
 	<!-- https://www.vhv.rs/dpng/d/480-4802563_cat-sleeping-clipart-black-and-white-svg-freeuse.png -->
-	<div class="mx-auto mt-10">
+	<!-- <div class="mx-auto mt-10">
 		<img src={sleepingCat} alt="Sleeping cat illustration" class="h-28 opacity-90 sm:h-32" />
-	</div>
+	</div> -->
 </div>

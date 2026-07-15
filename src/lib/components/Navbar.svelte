@@ -3,7 +3,8 @@
 	import ThemeToggle from './ThemeToggle.svelte';
 
 	const links = [
-		{ label: 'Blog', href: '#blog' },
+		{label: 'Home', href: '/'},
+		{ label: 'Blog', href: '/blog' },
 		{ label: 'Projects', href: '#projects' },
 		{ label: 'Resumé', href: '#resume' }
 	];
